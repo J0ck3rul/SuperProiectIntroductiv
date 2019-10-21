@@ -1,0 +1,51 @@
+.logo-fundatie{
+    width: 140px;
+    height: 70px;
+    z-index: 10;
+}
+
+.header-bar{
+    display: flex;
+}
+
+.buttons-full-box{
+    display: flex;
+    position: absolute;
+    right: 0px; 
+    margin-top: 2em;
+    margin-right: 2em;
+    z-index: 10;
+}
+
+.social-button{
+    height: 35px;
+    width: 35px;
+}
+
+.vertical-bar{
+    margin-left: 5px;
+    margin-right: 5px;
+    border-right: 2px solid grey;
+}
+
+.buttons-site{
+    margin-top: auto;
+    margin-bottom: auto;
+    z-index: 10;
+}
+
+.asii-people{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+}
+
+.red{
+    -webkit-filter: invert(40%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(400%) contrast(2);
+      filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
+}
+
+.header-and-description{
+    background: #e65555;
+    
+}
