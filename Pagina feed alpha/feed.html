@@ -43,9 +43,9 @@
             <div id="row">
                 <div id="bara">
                     <p>Name</p>
-                    <input placeholder="John Doe">
+                    <input id="name-input" placeholder="John Doe">
                     <p>Department</p>
-                    <select>
+                    <select id="dep-select">
                         <option value="PR & Media">PR & Media</option>
                         <option value="IT">IT</option>
                         <option value="Relatii externe">Relatii externe</option>
@@ -53,25 +53,23 @@
                         <option value="Evaluari">Evaluari</option>
                     </select>
                     <p>Your beautiful pictures</p>
-                    <div>
-                        <img src="pic.png">
-                        <img src="pic.png">
-                        <img src="pic.png">
-                        <img src="pic.png">
+                    <input type="file" id="img-input" name="pic" accept="image/*" multiple="multiple">
+                    <div id="form-images">
+                        
                     </div>
 
                 </div>
 
                 <div id="spa">
                     <p>Your Toughts</p>
-                    <textarea placeholder="Imi place"></textarea>
+                    <textarea id="opinion-textarea" placeholder="Imi place"></textarea>
 
                 </div>
 
 
             </div>
 
-            <button id="rosu">
+            <button id="rosu" class="add-button">
                 post
             </button>
 
@@ -83,52 +81,56 @@
 
     </header>
 
-    <div class="bod">
-        <div class="flexf">
-            <img src="pic.png">
-            <h1>Nume</h1>
-            <p>dep</p>
-        </div>
-        <p>asdsadsadsa</p>
-        <div class="flexf">
-            <img src="pic.png">
-            <img src="pic.png">
-            <img src="pic.png">
-            <img src="pic.png">
-            <img src="pic.png">
-        </div>
-    </div>
+    <div id="feed-section">
 
-    <div class="bod">
-        <div class="flexf">
-            <img src="pic.png">
-            <h1>Nume</h1>
-            <p>dep</p>
+        <div class="bod">
+            <div class="flexf">
+                <img class="avatar" src="pic.png">
+                <h1 class="name">Nume</h1>
+                <p class="departament">dep</p>
+            </div>
+            <p class="opinion">asdsadsadsa</p>
+            <div class="flexf image-container">
+                <img src="pic.png">
+                <img src="pic.png">
+                <img src="pic.png">
+                <img src="pic.png">
+                <img src="pic.png">
+            </div>
         </div>
-        <p>asdsadsadsa</p>
-        <div class="flexf">
-            <img src="pic.png">
-            <img src="pic.png">
-            <img src="pic.png">
-            <img src="pic.png">
-            <img src="pic.png">
-        </div>
-    </div>
 
-    <div class="bod">
-        <div class="flexf">
-            <img src="pic.png">
-            <h1>Nume</h1>
-            <p>dep</p>
+        <div class="bod">
+            <div class="flexf">
+                <img src="pic.png">
+                <h1>Nume</h1>
+                <p>dep</p>
+            </div>
+            <p>asdsadsadsa</p>
+            <div class="flexf">
+                <img src="pic.png">
+                <img src="pic.png">
+                <img src="pic.png">
+                <img src="pic.png">
+                <img src="pic.png">
+            </div>
         </div>
-        <p>asdsadsadsa</p>
-        <div class="flexf">
-            <img src="pic.png">
-            <img src="pic.png">
-            <img src="pic.png">
-            <img src="pic.png">
-            <img src="pic.png">
+
+        <div class="bod">
+            <div class="flexf">
+                <img src="pic.png">
+                <h1>Nume</h1>
+                <p>dep</p>
+            </div>
+            <p>asdsadsadsa</p>
+            <div class="flexf">
+                <img src="pic.png">
+                <img src="pic.png">
+                <img src="pic.png">
+                <img src="pic.png">
+                <img src="pic.png">
+            </div>
         </div>
+
     </div>
 
     <footer>
@@ -168,5 +170,5 @@
 
 </body>
 
-
+<script type="text/javascript" src="feed.js"></script>
 </html>
