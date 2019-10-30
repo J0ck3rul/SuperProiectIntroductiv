@@ -14,8 +14,9 @@ addButton.addEventListener("click", () => {
     // grab images url
     let imgSrc = [];
 
-    for (let i = 0; i < formImgContainer.children.length; i++) 
-        imgSrc.push(formImgContainer.children[i].getAttribute("src"));
+    Array.from(formImgContainer.children).forEach((item) => {
+        imgSrc.push(item.getAttribute("src"));
+    });
         
 
     // grab template elements
@@ -32,15 +33,15 @@ addButton.addEventListener("click", () => {
     name.innerText = formName;
     dep.innerText = formDep;
     opinion.innerText = formOpinion;
-    
-    for (let i = 0; i < imgSrc.length; i++) {
 
+    imgSrc.forEach((item) => {
+        
         let newImg = document.createElement("img");
-        newImg.setAttribute("src", imgSrc[i]);
-
+        newImg.setAttribute("src", item);
+        
         imgCont.appendChild(newImg);
 
-    }
+    });
 
     // append new post to feed
 
@@ -55,13 +56,13 @@ let imgInput = document.getElementById("img-input"),
 
 imgInput.onchange = () => {
 
-    for (let i = 0; i < imgInput.files.length; i++) {
+    Array.from(imgInput.files).forEach((item) => {
 
         let img = document.createElement("img");
-        img.setAttribute("src", imgInput.files[i].name);
+        img.setAttribute("src", URL.createObjectURL(item));
 
         imgCont.appendChild(img);
 
-    }
+    });
 
 }
