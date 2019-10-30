@@ -4,11 +4,39 @@ addButton.addEventListener("click", () => {
 
     let template = document.getElementsByClassName("bod")[0].cloneNode(true);
 
-    // grab information from form
-    let formName = document.getElementById("name-input").value,
-        formDep = document.getElementById("dep-select").value,
+    // grab form elements (we're going to need them later)
+    let formNameEl = document.getElementById("name-input"),
+        formDepEl = document.getElementById("dep-select"),
         formImgContainer = document.getElementById("form-images"),
-        formOpinion = document.getElementById("opinion-textarea").value;
+        formOpinionEl = document.getElementById("opinion-textarea"),
+        imgInput = document.getElementById("img-input");
+
+    // form validation
+    let errs = [];
+    
+    if (formNameEl.value === "") errs.push("Name");
+    if (formOpinionEl.value === "") errs.push("Opinion");
+    if (imgInput.value === "") errs.push("Images");
+
+    if (errs.length) {
+
+        let msg = "Following inputs cannot be empty: ";
+
+        for (let i = 0; i < errs.length; i++) {
+            msg += errs[i];
+            if (i < errs.length - 1) msg += ", ";
+        }
+
+        alert(msg);
+
+        return 0;
+
+    }
+
+    // grab information from form
+    let formName = formNameEl.value,
+        formDep = formDepEl.value,
+        formOpinion = formOpinionEl.value;
 
 
     // grab images url
@@ -46,6 +74,15 @@ addButton.addEventListener("click", () => {
     // append new post to feed
 
     document.getElementById("feed-section").appendChild(template);
+
+    template.scrollIntoView({behavior:"smooth"});
+
+    // Empty form
+
+    formNameEl.value = "";
+    formImgContainer.innerHTML = "";
+    formOpinionEl.value = "";
+    imgInput.value = "";
 
 });
 
