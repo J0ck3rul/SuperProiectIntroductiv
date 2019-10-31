@@ -117,7 +117,7 @@ footer{
     background: rgb(222, 87, 73);
 }
 
-.flexf{
+.flex-general{
     display: flex;
 }
 
@@ -125,8 +125,16 @@ li{
     list-style: none;
 }
 
-#dreapta{
+#dreapta-text{
     text-align: right;
+    position: relative;
+    right: 16px;
+    font-size: 24px;
+    color:white;
+    font: Regular 45px/60px Segoe UI;
+    letter-spacing: 0;
+
+
 }
 
 #fot{
@@ -135,6 +143,46 @@ li{
     width: 100%;
 }
 
-.bod{
-    background-color: #b4b3b3;
+.body-text{
+    background-color: white;
+    margin: 20px auto;
+    padding: auto;
+    border: none;
+    border-radius: 5px;
+    width: 800px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+#stanga-text{
+    text-align: left;
+    position: relative;
+    left: 16px;
+    font-size: 24px;
+    color:white;
+    font: Regular 45px/60px Segoe UI;
+    letter-spacing: 0;
+
+
+}
+
+.partea1-body{
+    height: 300px;
+    width: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.partea2-body{
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.social-footer{
+    justify-content: space-between;
 }

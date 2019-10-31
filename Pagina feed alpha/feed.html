@@ -10,7 +10,7 @@
 </head>
 
 
-<body>
+<body-texty>
     <header>
 
 
@@ -81,16 +81,18 @@
 
     </header>
 
-    <div id="feed-section">
+    <div id="feed-section" style="display: flex; flex-direction: column; background-color: #b4b3b3">
 
-        <div class="bod">
-            <div class="flexf">
+        <div class="body-text">
+            <div class="partea1-body">
+            <div class="flex-general">
                 <img class="avatar" src="assets/pic.png">
                 <h1 class="name">Nume</h1>
                 <p class="departament">dep</p>
             </div>
             <p class="opinion">asdsadsadsa</p>
-            <div class="flexf image-container">
+            </div>
+            <div class="partea2-body image-container">
                 <img src="assets/pic.png">
                 <img src="assets/pic.png">
                 <img src="assets/pic.png">
@@ -99,14 +101,16 @@
             </div>
         </div>
 
-        <div class="bod">
-            <div class="flexf">
+        <div class="body-text">
+            <div class="partea1-body">
+            <div class="flex-general">
                 <img class="avatar" src="assets/pic.png">
                 <h1 class="name">Nume</h1>
                 <p class="departament">dep</p>
             </div>
-            <p class="opinion">asdsadsadsa</p>
-            <div class="flexf image-container">
+            <p class="opinion" id="body-middle-text">asdsadsadsa</p>
+            </div>
+            <div class="partea2-body image-container">
                 <img src="assets/pic.png">
                 <img src="assets/pic.png">
                 <img src="assets/pic.png">
@@ -115,14 +119,16 @@
             </div>
         </div>
 
-        <div class="bod">
-            <div class="flexf">
+        <div class="body-text">
+            <div class="partea1-body">
+            <div class="flex-general">
                 <img class="avatar" src="assets/pic.png">
                 <h1 class="name">Nume</h1>
                 <p class="departament">dep</p>
             </div>
             <p class="opinion">asdsadsadsa</p>
-            <div class="flexf image-container">
+            </div>
+            <div class="partea2-body image-container">
                 <img src="assets/pic.png">
                 <img src="assets/pic.png">
                 <img src="assets/pic.png">
@@ -136,24 +142,24 @@
     <footer>
 
         <div id="fot">
-            <div class="flexf">
+            <div class="flex-general" id="stanga-text">
                 <div>
                     <p>Lost?</p>
-                    <ul>
-                        <li>Home</li>
-                        <li>Feed</li>
-                        <li>About us</li>
-                    </ul>
+                
+                    <p href="#home">Home</p>
+                    <p href="#feed">Feed</p>
+                    <p href="#aboutus">About us</p>
+                    
                 </div>
                 <div>
                     <p>Get in touch</p>
-                    <div>
-                        <img src="assets/fb1.png">
-                        <img src="assets/ig1.png">
+                    <div class="social-footer">
+                        <img src="assets/fb1.png" href="#home">
+                        <img src="assets/ig1.png" href="#home">
                     </div>
                 </div>
             </div>
-            <div id="dreapta">
+            <div id="dreapta-text">
                 <p>Our journey</p>
                 <ul>
                     <li>Github</li>
@@ -168,7 +174,7 @@
     </footer>
 
 
-</body>
+</body-texty>
 
 <script type="text/javascript" src="js/feed.js"></script>
 </html>
