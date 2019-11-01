@@ -47,14 +47,29 @@
     
 
 }
+.pages{
+    display: table-column;
+    z-index: 15;
+}
+
+.postari{
+    display: flex;
+}
+
+.posts{
+    z-index: 15;
+    display: table-column;
+    
+}
+
+.Hottest{
+    display: table-column;
+}
 
 .header-bar{
     display: flex;
 }
 
-.posts{
-    display: table-column;
-}
 
 .description-box{
     display: flex;
