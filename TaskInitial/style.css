@@ -49,8 +49,10 @@
 
 }
 .pages{
-    display: table-column;
+    display: block ;
     z-index: 15;
+    width: 100px;
+    height: 100px;
 }
 
 .postari{
