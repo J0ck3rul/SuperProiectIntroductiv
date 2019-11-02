@@ -65,6 +65,7 @@ header{
 body{
     margin: 0;
     padding: 0;
+    background: #b3b3b3;
 }
 
 .for{
@@ -168,8 +169,8 @@ li{
 }
 
 .partea1-body{
-    height: 300px;
-    width: 400px;
+    height: 500px;
+    width: 800px;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -185,4 +186,21 @@ li{
 
 .social-footer{
     justify-content: space-between;
+    margin-left: 15px;
+}
+
+#poza-profil{
+    height: 100px;
+    width: auto;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+#flex-text{
+    display: flex;
+    flex-direction: row;
+}
+
+#a{
+    display: table;
 }

@@ -185,9 +185,19 @@ li{
 
 .social-footer{
     justify-content: space-between;
+    margin-left: 15px;
 }
 
 #poza-profil{
     height: 100px;
     width: auto;
+}
+
+#flex-text{
+    display: flex;
+    flex-direction: row;
+}
+
+#a{
+    display: table;
 }
