@@ -12,6 +12,12 @@
     font: bold;
 
 }
+.link{
+    text-decoration: none;
+    float: left;
+    margin-right: 15px;
+    color: white;
+}
 .buton2{
     background-color: #ffffff00;
     border: 2px solid white;
@@ -133,6 +139,8 @@
 .social-button{
     height: 35px;
     width: 35px;
+    float: left;
+    margin-left: 15px;
 }
 
 .vertical-bar{
