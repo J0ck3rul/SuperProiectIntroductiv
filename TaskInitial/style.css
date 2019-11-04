@@ -90,6 +90,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     margin: auto;
+    margin-top: 10px;
 }
 
 .next-line::before, .next-line::after{
