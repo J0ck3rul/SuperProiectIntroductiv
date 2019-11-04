@@ -30,14 +30,18 @@
 .buttons {
     margin-top: auto;
     margin-bottom: auto;
-    text-decoration: none
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    font: Regular 45px/60px Segoe UI;
 }
 
 header {
     height: 15vh;
-    background: linear-gradient( rgba(222, 87, 73, 0.5) 100%, rgba(222, 87, 73, 0.5)100%), url("img/p1.png");
+    background: linear-gradient( rgba(222, 87, 73, 0.5) 100%, rgba(222, 87, 73, 0.5)100%), url("img/p2.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     background-attachment: fixed;
     display: flex;
 }
@@ -132,20 +136,22 @@ footer {
     letter-spacing: 0;
 }
 
+#stanga-text>* {
+    margin-left: 100px;
+}
+
 .social-footer {
+    margin: left;
     height: 100px;
     margin: auto;
-    width: 1000px;
     text-align: center;
     padding: 10px;
 }
 
-
-}
 #dreapta-text {
     text-align: right;
     position: relative;
-    right: 15px;
+    right: 100px;
     font-size: 24px;
     color: white;
     font: Regular 45px/60px Segoe UI;
