@@ -12,6 +12,12 @@
     font: bold;
 
 }
+
+.main-links{
+    text-decoration: none;
+    color: black;
+}
+
 .link{
     text-decoration: none;
     float: left;
@@ -182,3 +188,4 @@
     background: #e65555;
     
 }
+/* Finished */
