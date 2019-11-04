@@ -2,7 +2,7 @@ let addButton = document.getElementsByClassName("add-button")[0];
 
 addButton.addEventListener("click", () => {
 
-    let template = document.getElementsByClassName("bod")[0].cloneNode(true);
+    let template = document.getElementsByClassName("body-text")[0].cloneNode(true);
 
     // grab form elements (we're going to need them later)
     let formNameEl = document.getElementById("name-input"),
