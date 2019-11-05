@@ -208,3 +208,12 @@ li{
 #a{
     display: table;
 }
+
+#form-images {
+    height: 100px;
+}
+
+#form-images > img {
+    margin: 10px;
+    height: 100%;
+}
