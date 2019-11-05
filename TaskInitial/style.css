@@ -1,0 +1,195 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+.logo-fundatie{
+    width: 140px;
+    height: 70px;
+    z-index: 10;
+    display: flex;
+}
+.buton1{
+    background-color: white;
+    padding: 8px 8px;
+    font-size: 24px;
+    color: #e55555;
+    font: bold;
+
+}
+
+.main-links{
+    text-decoration: none;
+    color: black;
+}
+
+.link{
+    text-decoration: none;
+    float: left;
+    margin-right: 15px;
+    color: white;
+}
+.buton2{
+    background-color: #ffffff00;
+    border: 2px solid white;
+    padding: 8px 41px;
+    color: white;
+    font: bold;
+    font-size: 24px;
+}
+.journey{
+    margin-left: auto;
+    margin-right: 6em;
+}
+
+.get-in-touch{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.butoane-principale{
+    text-align: center;
+    margin-top: 3em;
+}
+.pagina-principala{
+    position: relative;
+    background-color: lightgrey;
+    width: 270 px;
+    padding: 1em;
+    margin: 25px;
+    box-shadow: 3px 2px lightslategrey;
+    margin-left: 9em;
+    margin-right: 9em;
+    z-index: 0;
+    
+
+}
+.pages{
+    display: table-column ;
+    z-index: 15;
+}
+
+
+.posts{
+    display: flex;
+    margin-bottom: 4em;
+    
+}
+
+.Hottest{
+    display: block;
+}
+
+.names{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+}
+.next-line{
+    display: block;
+    white-space: nowrap;
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.next-line::before, .next-line::after{
+    content: "\"";
+    overflow: visible;
+    text-overflow: unset;
+}
+
+.muiemoscu{
+    width: 30%;
+    display: block;
+    padding-left: 3em;
+    margin-bottom: 10px;
+}
+
+.Hottest>h1{
+    margin-left: 4em;
+    margin-bottom: 1em;
+}
+
+.persoana{
+    display: flex;
+}
+
+.round-image{
+    border-radius: 50%;
+    height: 85px;
+    display: inline-block;
+}
+
+
+.header-bar{
+    display: flex;
+}
+
+
+.description-box{
+    display: flex;
+    width: 20%;
+    z-index: 5;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: 6em;
+}
+
+.buttons-full-box{
+    display: flex;
+    position: absolute;
+    right: 0px; 
+    margin-top: 2em;
+    margin-right: 2em;
+    z-index: 10;
+}
+
+.social-button{
+    height: 35px;
+    width: 35px;
+    float: left;
+    margin-left: 15px;
+}
+
+.vertical-bar{
+    margin-left: 5px;
+    margin-right: 5px;
+    border-right: 2px solid grey;
+}
+
+
+.buttons-site{
+    margin-top: auto;
+    margin-bottom: auto;
+    z-index: 10;
+}
+.buttons-site-bottom{
+    margin-bottom: auto;
+    margin-left: 6em;
+    z-index: 10;
+    display: grid;
+}
+.bottom{
+    margin-top: 5em;
+    display: flex;
+    background-color: brown;
+}
+
+.asii-people{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+}
+
+.red{
+    -webkit-filter: invert(40%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(400%) contrast(2);
+      filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
+}
+
+.header-and-description{
+    background: #e65555;
+    
+}
+/* Finished */
